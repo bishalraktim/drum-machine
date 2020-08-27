@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Quotation from './components/Quotation/Quotation';
+import Drum from './container/Drum/Drum';
 
 class App extends Component {
 
   render () {
     return (
       <div>
-        <Quotation />
+        <Drum />
       </div>
     );
   }
