@@ -9,12 +9,21 @@ const Power = (props) => {
   } else {
     show = '0'
   }
+
+  let styles = null;
+
+  if(props.powStatus || props.bankStatus){
+    styles = classes.style1;
+  } else {
+    styles = classes.style2;
+  }
+
   return(
     <Aux>
-      <div className={classes.slidecontainer}>
-        <input className={classes.slider}
-          type='range' min='0' max='100'
-          value={show} onChange={props.changes} />
+      <div className={classes.buttoncontainer}>
+          <button className={classes.button} onClick={props.changes || props.changed}>
+            <div className={styles} />
+          </button>
       </div>
     </Aux>
   );

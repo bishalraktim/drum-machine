@@ -1,34 +1,29 @@
-.slidecontainer {
-  width: 100%;
+.buttoncontainer {
   text-align: center;
 }
 
-.slider {
-  -webkit-appearance: none;
-  appearance: none;
-  margin-top: 20px;
+.button {
   width: 5%;
-  height: 27px;
+  cursor: pointer;
   background-color: black;
   outline: none;
-  -webkit-transition: .2s;
-  border: 1px solid black;
+  border: none;
 }
 
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
+.style1 {
+  background-color: green;
   width: 25px;
   height: 25px;
-  background-color: blue;
   cursor: pointer;
-  border: 1px solid black;
+  border-radius: 100%;
+  margin: 2px 0 2px 30px;
 }
 
-.slider::-moz-range-thumb {
+.style2 {
+  background-color: red;
   width: 25px;
   height: 25px;
-  background-color: blue;
   cursor: pointer;
-  border: 1px solid black;
+  border-radius: 100%;
+  margin: 2px 0;
 }

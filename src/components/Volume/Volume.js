@@ -3,7 +3,7 @@ import classes from './Volume.module.css';
 import Aux from '../../hoc/Aux/Aux';
 
 const Volume = (props) => {
-  
+
   return(
     <Aux>
       <div className={classes.slidecontainer}>

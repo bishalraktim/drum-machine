@@ -6,7 +6,8 @@ import Power from '../../components/Power/Power';
 class Drum extends Component {
   state = {
     volume: '50',
-    power: true
+    power: true,
+    bank: false,
   }
 
   changeHandler(e){
@@ -15,9 +16,15 @@ class Drum extends Component {
     });
   }
 
-  changesHandler(){
+  clickHandler(){
     this.setState({
       power: !this.state.power
+    });
+  }
+
+  clickedHandler(){
+    this.setState({
+      bank: !this.state.bank
     });
   }
 
@@ -26,8 +33,11 @@ class Drum extends Component {
     return(
       <Aux>
         <Volume currVol={this.state.volume} change={this.changeHandler.bind(this)}/>
-        {'Volume: ' + this.state.volume}
-        <Power powStatus={this.state.power} changes={this.changesHandler.bind(this)} />
+        {'Volume: ' + this.state.volume} <br />
+        {'Power'}
+        <Power powStatus={this.state.power} changes={this.clickHandler.bind(this)} />
+        {'Bank'}
+        <Power bankStatus={this.state.bank} changed={this.clickedHandler.bind(this)} />
       </Aux>
     );
   }
