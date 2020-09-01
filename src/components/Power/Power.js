@@ -15,7 +15,7 @@ const Power = (props) => {
   if(props.powStatus || props.bankStatus){
     styles = classes.style1;
   } else {
-    styles = classes.style2;
+    styles = [classes.style1, classes.style2].join(' ');
   }
 
   return(

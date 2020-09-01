@@ -1,0 +1,9 @@
+.display {
+  background-color: #8d8d8d;
+  border: 1px solid #8d8d8d;
+  width: 20%;
+  height: 10vh;
+  margin:  10px auto;
+  text-align: center;
+  padding-top: 10px;
+}
