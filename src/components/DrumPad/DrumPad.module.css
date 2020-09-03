@@ -1,0 +1,37 @@
+.Q {
+  text-align: center;
+}
+
+.button {
+  width: 5%;
+  height: 8vh;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+
+/* background-color: buttonface; */
+
+
+@keyframes example {
+  from {background-color: buttonface;}
+  to {background-color: yellow;}
+}
+
+.active {
+  background-color: buttonface;
+  animation-name: example;
+  animation-duration: 0.3s;
+}
+
+@keyframes examples {
+  from {background-color: buttonface;}
+  to {background-color: yellow;}
+}
+
+.actives {
+  background-color: buttonface;
+  animation-name: examples;
+  animation-duration: 0.3s;
+}
